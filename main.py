@@ -1,3 +1,4 @@
+import os
 import discord
 import re
 import aiohttp
@@ -7,7 +8,7 @@ from discord import app_commands
 from discord.ext import commands
 
 # ====== CONFIG ======
-TOKEN = "MTM4MjEyMDAxMDg3MjUyNDg3MA.GEaaH2.haCAcOlpMY_di0_TqcdtovHbmKX6VHx8_mvCBc"
+TOKEN = os.getenv("DISCORD_TOKEN")
 MOD_ROLE_IDS = [1382126802352214026]  # Replace with actual role IDs
 
 BANNED_DOMAINS = set([
